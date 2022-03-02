@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import { ThemeProvider } from '@mui/material/styles';
+import AppProvider from './hooks';
+import AppRoutes from './routes';
+import 'react-toastify/dist/ReactToastify.css';
+import GlobalStyles from './globalStyles';
+import theme from './theme';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <AppProvider>
+          <AppRoutes />
+        </AppProvider>
+        <GlobalStyles />
+      </Router>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        draggable
+        pauseOnHover={false}
+        theme="colored"
+      />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

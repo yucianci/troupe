@@ -1,0 +1,50 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "teste@email.com.br",
+      "password": "123456",
+      "token": "token"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "2408c87b-0ef9-44eb-b1b5-65fa42ad4839",
+      "nome": "yuri",
+      "cpf": "12199388905",
+      "email": "yucianci@gmail.com",
+      "endereco": {
+        "cep": "87518000",
+        "rua": "avenida central",
+        "numero": "1300",
+        "bairro": "centro",
+        "cidade": "umuarama"
+      },
+      "action": "include",
+      "cep": "87518000",
+      "rua": "avenida central",
+      "numero": "1300",
+      "bairro": "centro",
+      "cidade": "umuarama"
+    },
+    {
+      "id": "94f0c2ba-4089-4835-b14c-f82a9258a7a2",
+      "nome": "leticia",
+      "cpf": "5845457",
+      "email": "email@email.com",
+      "endereco": {
+        "cep": "wudauyd",
+        "rua": "dgauydgwayg",
+        "numero": "gdauygdwauyg",
+        "bairro": "gdwaugyday",
+        "cidade": "guygwugdya"
+      },
+      "action": "include",
+      "cep": "wudauyd",
+      "rua": "dgauydgwayg",
+      "numero": "gdauygdwauyg",
+      "bairro": "gdwaugyday",
+      "cidade": "guygwugdya"
+    }
+  ]
+}
